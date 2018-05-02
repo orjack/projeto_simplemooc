@@ -1,2 +1,0 @@
-# simplemooc
-Sistema de cursos
