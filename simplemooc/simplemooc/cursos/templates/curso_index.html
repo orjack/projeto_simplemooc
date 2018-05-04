@@ -19,7 +19,7 @@
             {% if curso.imagem %}
             <img src="{{ curso.imagem.url }}" alt="{{ curso.nome }}" />
             {% else %}
-            <img src="{% static 'img/curso-image.png' %}" alt="{{ curso.nome }}" />
+            <img src="{% static 'img/curso-image.png' %}" alt="{{ curso.nome }}"/>
             {% endif %}
             </a>
         </div>
