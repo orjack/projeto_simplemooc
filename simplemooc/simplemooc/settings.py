@@ -123,3 +123,14 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'simplemooc', 'media')
 MEDIA_URL = '/media/'
+
+# E-mails
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'Thiago <thiago.almeida777@gmail.com>'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'thiago.almeida777@gmail.com'
+EMAIL_HOST_PASSWORD = 'manir2309'
+EMAIL_PORT = 465
+
+CONTACT_EMAIL = EMAIL_HOST_USER

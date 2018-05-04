@@ -23,6 +23,9 @@ class Curso(models.Model):
     def __str__(self):
         return self.nome
 
+    def get_absolute_url(self):
+        from django.urls import reverse
+        return reverse ('detail', kwargs={'slug': self.slug})
 
     class Meta:
         verbose_name = 'Curso'

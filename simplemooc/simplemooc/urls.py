@@ -23,7 +23,7 @@ admin.autodiscover()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api.urls')),
-    path('curso', include('cursos.urls')),
+    path('curso/', include('cursos.urls')),
 ]
 
 if settings.DEBUG:
