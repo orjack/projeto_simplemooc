@@ -5,7 +5,6 @@ import django.db.models.manager
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('cursos', '0002_auto_20180501_1313'),
     ]

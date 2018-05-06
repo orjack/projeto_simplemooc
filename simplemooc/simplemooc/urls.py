@@ -23,6 +23,7 @@ admin.autodiscover()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api.urls')),
+    path('conta/', include('account.urls')),
     path('curso/', include('cursos.urls')),
 ]
 

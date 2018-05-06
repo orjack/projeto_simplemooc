@@ -15,7 +15,7 @@ class Curso(models.Model):
     descricao = models.TextField(verbose_name='Descrição', blank=True)
     about = models.TextField(verbose_name='Sobre', blank=True)
     data_inicio = models.DateField(verbose_name='Data de Inicio', blank=True, null=True)
-    imagem = models.ImageField(verbose_name= 'Imagem', upload_to='imagens', null=True, blank=True)
+    imagem = models.ImageField(verbose_name='Imagem', upload_to='imagens', null=True, blank=True)
     data_criacao = models.DateTimeField(verbose_name='Criado em', auto_now_add=True)
     data_atualizacao = models.DateTimeField(verbose_name='Atualizado em', auto_now=True)
     object = CursoManager()
@@ -25,7 +25,7 @@ class Curso(models.Model):
 
     def get_absolute_url(self):
         from django.urls import reverse
-        return reverse ('detail', kwargs={'slug': self.slug})
+        return reverse('detail', kwargs={'slug': self.slug})
 
     class Meta:
         verbose_name = 'Curso'
