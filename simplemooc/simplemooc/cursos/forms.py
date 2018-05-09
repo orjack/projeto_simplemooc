@@ -2,7 +2,7 @@ from django import forms
 from django.core.mail import send_mail
 from django.conf import settings
 
-from api.mail import send_mail_template
+from simplemooc.api.mail import send_mail_template
 
 
 class ContactCourse(forms.Form):

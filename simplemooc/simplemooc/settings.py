@@ -24,7 +24,7 @@ SECRET_KEY = 'z$30%6drx_f(zwl)e3u(n@uis2pou%bgw(9+j)cw@ox7=sccx!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.25.24']
 
 # Application definition
 
@@ -137,7 +137,8 @@ EMAIL_PORT = 465
 
 CONTACT_EMAIL = EMAIL_HOST_USER
 
-#Auth
+# Auth
 LOGIN_URL = '/conta/entrar/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_URL = '/logout/'
+AUTH_USER_MODEL = 'account.User'

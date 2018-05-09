@@ -22,9 +22,9 @@ admin.autodiscover()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('api.urls')),
-    path('conta/', include('account.urls')),
-    path('curso/', include('cursos.urls')),
+    path('', include('simplemooc.api.urls')),
+    path('conta/', include('simplemooc.account.urls')),
+    path('curso/', include('simplemooc.cursos.urls')),
 ]
 
 if settings.DEBUG:

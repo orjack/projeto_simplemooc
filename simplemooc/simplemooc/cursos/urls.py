@@ -1,7 +1,6 @@
 from django.conf.urls import url
 from django.urls import path
-from cursos.views import details
-from simplemooc.cursos.views import index
+from simplemooc.cursos.views import index, details
 
 urlpatterns = [
     path('', index, name='index'),
